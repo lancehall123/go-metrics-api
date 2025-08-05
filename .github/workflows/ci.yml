@@ -28,7 +28,7 @@ jobs:
     - name: Build Go app
       run: go build -v .
 
-    - name: Run tests (if present)
+    - name: Run tests
       run: |
         if ls *_test.go 1> /dev/null 2>&1; then
           go test -v ./...
